@@ -43,7 +43,7 @@ namespace UATPTest
         {
             // Arrange
             var mockUfeService = new Mock<UfeService>();
-            //mockUfeService.Setup(s => s.GetFeeMultiplier()).Returns(0.1m);
+            mockUfeService.Setup(s => s.GetFeeMultiplier()).Returns(0.1m);
 
             var controller = new PaymentsController(); 
             var request = new PaymentRequest { Amount = 100m };

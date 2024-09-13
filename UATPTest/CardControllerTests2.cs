@@ -111,7 +111,7 @@ namespace UATPTest
         {
             // Arrange
             var cardNumber = "123456789";
-            _mockRepository.Setup(repo => repo.GetCardBalance(cardNumber)).Returns((decimal?)null);
+            //_mockRepository.Setup(repo => repo.GetCardBalance(cardNumber)).Returns((decimal?)null);
 
             // Act
             var result = _controller.GetCardBalance(cardNumber);

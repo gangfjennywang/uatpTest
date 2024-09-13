@@ -31,7 +31,7 @@ public class PaymentsController : ControllerBase
         }
         catch (Exception ex) 
         {
-            logger.Error(ex.Message, "An error occurred during GetCardBalance");
+            logger.Error(ex.Message, "An error occurred during GetCardBalance process");
             throw;
         }
     }

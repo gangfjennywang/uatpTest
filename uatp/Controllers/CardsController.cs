@@ -8,6 +8,7 @@ namespace uatp.Controllers
     [Route("api/Cards")]
     public class CardsController : ControllerBase
     {
+        
         private readonly CardRepository _cardRepository;
         protected static Logger logger = LogManager.GetCurrentClassLogger();
 
